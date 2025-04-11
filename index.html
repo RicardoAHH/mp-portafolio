@@ -10,18 +10,18 @@
 </head>
 
 <body>
-    <header class="bg-[#0a0f22] flex flex-row justify-center items-center h-15 text-[#FFFFFF] w-screen">
-        <section class="pl-20 flex-grow-3 w-[1/3]">
+    <header class="bg-[#0a0f22] flex flex-row justify-center items-center text-[#FFFFFF] w-screen">
+        <section class="pl-20 pt-10 mr-auto w-[1/3]">
             <img width="40px" src="./resources/icons8-react.svg" alt="react">
         </section>
-        <section class="w-[1/3] flex flex-grow-3 justify-center items-center text-sm">
+        <section class="pt-10 w-[1/3] flex  justify-center items-center text-sm">
             <nav class="flex gap-[3vw]">
                 <button class="hover:bg-sky-500 rounded-md p-2"><a href="">INICIO</a></button>
                 <button class="hover:bg-sky-500 rounded-md p-2"><a href="">HABILIDADES</a></button>
                 <button class="hover:bg-sky-500 rounded-md p-2"><a href="">PROYECTOS</a></button>
             </nav>
         </section>
-        <section class="w-[1/3] flex flex-grow-3 justify-end items-end pr-20">
+        <section class="pt-10 w-[1/3] ml-auto flex justify-end items-end pr-20">
             <button class="w-34 pl-2 gap-2 flex items-center rounded-full p-0 border-2 border-yellow-100"><a
                     href="">CONTACTO</a><img width=35px src="./resources/Eo_circle_yellow_arrow-up-right.svg"
                     alt="flecha"></button>
@@ -30,115 +30,181 @@
     </header>
     <main>
         <section
-            class=" width-screen h-[700px] bg-linear-to-b from-[#0a0f22] from-[20%] to-[#417ed9] flex flex-row items-center justify-center flex-wrap gap-15">
+            class=" w-screen h-[850px] bg-linear-to-b from-[#0a0f22] from-[20%] to-[#417ed9] flex flex-row items-center justify-center flex-wrap">
             <div class=" w-[80%] flex justify-center items-center">
-                <h1 class=" text-white text-[50px] text-center pt-25 w-[600px] font-semibold">
+                <h1 class=" text-white text-[60px] text-center pt-25 w-[700px] font-semibold">
                     Soy <span class="text-[#e4f78b]">Ricardo
                         Hernández</span>
                     desarrollador <span class=" border-1 border-white rounded-xl pr-2 pl-2">Full Stack</span>
                 </h1>
             </div>
-            <div class=" p-2 mr-auto w-[350px] h-[170px] bg-[#1e2338] -rotate-6 flex items-center justify-center mb-30 rounded-xl
+            <div class=" p-4 mr-auto w-[350px] h-[180px] bg-[#1e2338] -rotate-6 flex items-center justify-center mb-25 rounded-xl
                 shadow-[0_-3px_15px_rgba(255,255,255,0.2)]">
                 <div class="w-[90%] h-[90%] text-left ">
                     <h2 class=" text-white text-[25px] leading-7">Client Review From Australia<span
-                            class="bg-[#3a1e90] pl-1 pr-1 ml-1 rounded-sm">5.0</span>
+                            class="bg-[#3a1e90] pl-1 pr-1 ml-1 text-[20px] rounded-sm">5.0</span>
                     </h2>
 
-                    <p class="text-[14px] text-gray-500 leading-4 pt-2">Lorem ipsum dolor sit amet consectetur
-                        adipisicing
-                        elit.
-                        Recusandae, impedit
-                        laboriosam!</p>
-                </div>
-
-                <div></div>
-            </div>
-            <div class=" w-[25%] h-[50%] position: relative">
-                <img class="h-[100%] drop-shadow-[0_-15px_135px_rgba(219,249,197,1)] " src="./resources/descarga.png"
-                    alt="">
-                <div class=" position: absolute bottom-3 left-[28%]"><button
-                        class="bg-[#e8f78e] rounded-3xl border-2 pl-5 pr-5 pt-2 pb-2 border-blue-950">MY
-                        PROJECTS</button>
+                    <p class="text-[17px] text-gray-500 leading-5 pt-2">Outstanding Web Developer,
+                        Exceeded All Expectations. Highly
+                        Recommended Without Hesitation.
+                    </p>
                 </div>
 
             </div>
-            <div class=" ml-auto p-5 w-[300px] h-[150px] bg-[#1e2338] rotate-6 flex flex-col items-center justify-center mb-30 rounded-xl
+            <div class=" w-[480px] h-[550px] mt-auto flex items-end justify-center">
+                <div class=" relative z-0 w-[480px] h-[550px] flex items-end justify-center">
+                    <div
+                        class="w-[480px] h-[550px] bg-radial-[at_53%_80%] from-[#747954] from-5% to-[#ffffff00] to-70% absolute -z-10">
+                    </div>
+                    <img class="absolute z-2 h-[450px] w-[380px] drop-shadow-[0_-15px_135px_rgba(219,249,197,1)]"
+                        src="./resources/descarga.png" alt="">
+                    <div class="absolute z-3 bottom-7 left-[30%]"><button
+                            class="bg-[#e8f78e] rounded-3xl border-2 pl-5 pr-5 pt-2 pb-2 border-blue-950 w-[180px] h-[50px]">MY
+                            PROJECTS</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" ml-auto p-6 w-[350px] h-[180px] bg-[#1e2338] rotate-6 flex flex-col items-center justify-around mb-25 rounded-xl
             shadow-[0_-3px_15px_rgba(255,255,255,0.2)]">
-                <div class=" w-[100%]">
+                <div class=" w-[100%] text-[22px]">
                     <h2 class="text-white font-semibold">MY EXPERTISE </h2>
                 </div>
-                <div class="flex items-center">
-                    <p class=" text-white opacity-80">BACK-END
-                        <hr class="w-20  text-white">
+                <div class="flex items-center relative">
+                    <p class="text-[18px]  text-white opacity-80">BACK-END
+                        <hr class="w-42 border-[2px] text-white ml-1 mr-1">
                     </p>
-                    <img src="" alt="">
-                    <p class="text-white border-1 border-gray-500 rounded-md pl-1 pr-1">0%</p>
+                    <span
+                        class="h-[10px] w-[10px] bg-[#3f1c94] rounded-full border-1 border-white absolute ml-55"></span>
+                    <p class="text-white border-1 border-gray-500 rounded-md pl-1 pr-1">88%</p>
                 </div>
-                <div class="flex">
-                    <p class="text-white opacity-80">CMS</p>
-                    <img src="" alt="">
-                    <p class="text-white border-1 border-gray-500 rounded-md pl-1 pr-1">0%</p>
+                <div class="flex items-center relative">
+                    <p class="text-[18px] text-white opacity-80">CMS</p>
+                    <hr class="w-42 border-[2px] text-white ml-12 mr-2">
+                    <p class="text-white border-1 border-gray-500 rounded-md pl-1 pr-1">90%</p>
+                    <span
+                        class="h-[10px] w-[10px] bg-[#3c8afe] rounded-full border-1 border-white absolute ml-58"></span>
                 </div>
-                <div class="flex">
-                    <p class="text-white opacity-80">FRONT-END</p>
-                    <img src="" alt="">
-                    <p class="text-white border-1 border-gray-500 rounded-md pl-1 pr-1">0%</p>
+                <div class="flex items-center relative">
+                    <p class="text-[18px] text-white opacity-80">FRONT-END</p>
+                    <hr class="w-38 border-[2px] text-white ml-1 mr-1">
+                    <span
+                        class="h-[10px] w-[10px] bg-[#e3fb88] rounded-full border-1 border-white absolute ml-60"></span>
+                    <p class="text-white border-1 border-gray-500 rounded-md pl-1 pr-1">93%</p>
                 </div>
 
         </section>
-        <section class="width-screen h-[600px] bg-[#0a1022] flex ">
-            <figure class="border-3 w-[25%]">
-                <div></div>
-                <div></div>
+        <section class="width-screen h-[620px] bg-[#0a1022] flex justify-evenly">
+            <figure class="border-3 border-white w-[25%] relative">
+                <div
+                    class="w-[60px] h-[90px] border-2 border-white rounded-xl -rotate-12 absolute left-70 top-20 shadow-[-40px_-20px_50px_rgba(255,255,255,0.2)]">
+                </div>
+                <div
+                    class="w-[120px] h-[180px] border-2 border-white rounded-xl absolute bottom-35 left-30 rotate-12 shadow-[60px_30px_50px_rgba(255,255,255,0.1)]">
+                </div>
             </figure>
-            <article class="border-3 w-[50%] flex flex-col items-center justify-center">
-                <h2 class="text-center text-yellow-200 text-[50px]">WHO AM I?</h2>
-                <p class="text-center text-white ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
-                    architecto ullam porro
-                    reprehenderit ratione repellendus neque ad nostrum inventore ipsam asperiores, eveniet minus unde
-                    cumque similique esse explicabo, a commodi!
+            <article class=" border-3 border-b-purple-400 w-[45%] flex flex-col items-center justify-center">
+                <h2 class="mt-15 text-center text-yellow-200 text-[60px]">WHO AM I?</h2>
+                <p class="w-[80%] text-center text-white text-[20px]">I am a full-stack developer specialized in
+                    ReactJS. Plus,
+                    I
+                    also know some WordPress front-end development with
+                    Elementor and WooCommerce.
                     <br>
-                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Suscipit architecto ullam porro reprehenderit ratione repellendus neque ad nostrum inventore
-                    ipsam asperiores, eveniet minus unde cumque similique esse explicabo, a commodi!
+                    <br>Programing is my passion, that's the reason I am working at the
+                    time of my academic career.
                     <br>
-                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit architecto ullam porro
-                    reprehenderit ratione repellendus neque ad nostrum inventore ipsam asperiores, eveniet minus unde
-                    cumque similique esse explicabo, a commodi!
+                    <br>Additionally, I like to play PC games and read story-type books in
+                    my leisure time which is kinda fun and relaxing!
                     <br>
                     <br>
                     <br>
                 </p>
                 <button class="bg-[#e8f78e] rounded-3xl border-2 pl-5 pr-5 pt-2 pb-2 border-blue-950">SHOW MY
                     PROJECTS</button>
-            </article class="border-3 w-[25%]">
-            <figure>
-                <div></div>
+            </article>
+            <figure class="border-3 border-yellow-300 w-[25%] relative">
+                <div
+                    class="w-[120px] h-[180px] border-2 border-white rounded-xl absolute top-45 left-20 -rotate-12 shadow-[-70px_-30px_50px_rgba(255,255,255,0.1)]">
+                </div>
             </figure>
         </section>
         <section
-            class="border-3 border-white width-screen h-[600px] bg-[#0a1022] flex flex-row flex-wrap justify-center items-center">
+            class="border-3 border-white width-screen h-[670px] bg-[#0a1022] flex flex-row flex-wrap justify-center items-center">
             <div class="border-3 border-white w-[100%] h-[25%] flex items-center justify-center">
                 <h2 class="text-center text-yellow-200 text-[50px]">MY SKILLS
                 </h2>
             </div>
-            <div class="border-3 border-white w-[60%] h-[65%]">
-                <figure><img src="" alt=""></figure>
-                <figure><img src="" alt=""></figure>
-                <figure><img src="" alt=""></figure>
-                <figure><img src="" alt=""></figure>
-                <figure><img src="" alt=""></figure>
-                <figure><img src="" alt=""></figure>
-                <figure><img src="" alt=""></figure>
-                <figure><img src="" alt=""></figure>
+            <div class="border-3 border-white w-[60%] h-[75%] flex flex-wrap items-center justify-around">
+                <figure class="border-1 rounded-lg border-white w-[24%] h-[48%] bg-[#1d2237]"><img src="" alt="">
+                </figure>
+                <figure class="border-1 rounded-lg border-white w-[24%] h-[48%] bg-[#1d2237]"><img src="" alt="">
+                </figure>
+                <figure class="border-1 rounded-lg border-white w-[24%] h-[48%] bg-[#1d2237]"><img src="" alt="">
+                </figure>
+                <figure class="border-1 rounded-lg border-white w-[24%] h-[48%] bg-[#1d2237]"><img src="" alt="">
+                </figure>
+                <figure class="border-1 rounded-lg border-white w-[24%] h-[48%] bg-[#1d2237]"><img src="" alt="">
+                </figure>
+                <figure class="border-1 rounded-lg border-white w-[24%] h-[48%] bg-[#1d2237]"><img src="" alt="">
+                </figure>
+                <figure class="border-1 rounded-lg border-white w-[24%] h-[48%] bg-[#1d2237]"><img src="" alt="">
+                </figure>
+                <figure class="border-1 rounded-lg border-white w-[24%] h-[48%] bg-[#1d2237]"><img src="" alt="">
+                </figure>
             </div>
-            <div class="border-3 border-white w-[30%] h-[65%]">
+            <div class="ml-8 border-white w-[30%] h-[65%]  bg-[#151d33] rounded-xl">
                 <h3></h3>
                 <p></p>
                 <button></button>
             </div>
 
+        </section>
+        <section class="width-screen h-[500px] bg-[#0a1022] flex items-center justify-center">
+            <div class="border-1 rounded-lg border-white w-[90%] h-[65%] bg-[#1d2237]">
+                <div class=" h-[40%] border-white"></div>
+                <div class="border-3 h-[60%] border-yellow-400">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+
+        </section>
+        <section class="width-screen h-[650px] bg-[#0a1022] border-3 border-white">
+            <div class="h-[100%] w-[100%] z-0 relative flex items-center justify-around">
+                <figure class="border-3 border-red-300 w-[48%] h-[90%] "></figure>
+                <figure class="border-3 border-white w-[24%] h-[90%] rounded-3xl"></figure>
+                <figure class="border-3 border-white w-[12%] h-[90%] rounded-3xl"></figure>
+                <figure class="border-3 border-white w-[12%] h-[90%] rounded-3xl"></figure>
+                <div class="z-10 h-[100%] w-[100%] flex flex justify-start items-end absolute z-1 pb-16 pl-78">
+                    <div class=" w-[470px] h-14 border-1 rounded-3xl bg-[#e8f78c] flex flex-center justify-center">
+                        <button class="font-bold text-center">SHOW MY
+                            PROJECTS</button>
+                    </div>
+                    <h3 class=" ml-5 w-[150px] h-[63px] text-[30px] font-semibold text-base/8 text-white">
+                        Plumbing
+                        Company
+                    </h3>
+                </div>
+            </div>
+
+        </section>
+        <section class="width-screen h-[750px] bg-[#0a1022] flex items-center justify-center ">
+            <div class="bg-white w-[85%] h-[630px] rounded-3xl flex flex-col items-center justify-around">
+                <div class=" w-[100%] h-[126px] border-3">
+                    <h2>LET'S HAVE A CHAT</h2>
+                </div>
+                <div class="w-[100%] h-[110px] border-3"></div>
+                <div class="w-[100%] h-[110px] border-3"></div>
+                <div class=" w-[100%] h-[126px] border-3"></div>
+                <div class="w-[100%] h-[110px] border-3"></div>
+            </div>
         </section>
     </main>
     <footer></footer>
