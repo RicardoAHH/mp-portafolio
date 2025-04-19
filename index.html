@@ -23,20 +23,26 @@
         </section>
         <section class="mb-5 min-lg:hidden h-[35px] w-[100px] flex items-center p-2">
             <nav id="dropdownButton" class="flex flex-col flex-wrap w-[130px] mt-auto ">
-                <button onclick="toggleDropdown()" class="w-[100%]">
-                    <img src="./resources/hamburgermenu_120234.png" width="29" alt="MENU">
+                <button onclick="toggleDropdown()" class="w-[100%] text-gray-800 dark:text-white">
+                    <svg class=width="currentWidth" height="40px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 18L20 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <path d="M4 12L20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <path d="M4 6L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
                 </button>
-                <div id="dropdown" class="bg-white rounded-lg  flex flex-col">
-                    <a class="hover:bg-[#0a0f22] hover:text-white dark:hover:bg-sky-500 rounded-md p-2"
+                <div id="dropdown" class="bg-white rounded-lg  flex flex-col hidden">
+                    <a class="hover:bg-[#0a0f22] hover:text-white dark:hover:bg-sky-500 dark:text-gray-900 rounded-md p-2"
                         href="">INICIO</a>
-                    <a class="hover:bg-[#0a0f22] hover:text-white dark:hover:bg-sky-500 rounded-md p-2"
+                    <a class="hover:bg-[#0a0f22] hover:text-white dark:hover:bg-sky-500 dark:text-gray-900 rounded-md p-2"
                         href="">HABILIDADES</a>
-                    <a class="hover:bg-[#0a0f22] hover:text-white dark:hover:bg-sky-500 rounded-md p-2"
+                    <a class="hover:bg-[#0a0f22] hover:text-white dark:hover:bg-sky-500 dark:text-gray-900 rounded-md p-2"
                         href="">PROYECTOS</a>
                 </div>
                 <script>
                     function toggleDropdown() {
                         let dropdown = document.querySelector("#dropdown");
+                        dropdown.addEventListener("click", toggleDropdown);
                         dropdown.classList.toggle("hidden")
                     }
                 </script>
@@ -75,19 +81,35 @@
         </section>
     </header>
     <main class="w-screen">
-        <section class="w-screen h-[180px] bg-[#417ed9] dark:bg-[#0a0f22]">
+        <section class="max-lg:h-[80px] w-screen h-[180px] bg-[#417ed9] dark:bg-[#0a0f22]">
         </section>
         <section
-            class=" w-screen h-[830px] bg-linear-to-b from-[#417ed9] from-[5%] to-[#fb9635] dark:bg-linear-to-b dark:from-[#0a0f22] dark:from-[20%] dark:to-[#417ed9] flex flex-row items-center justify-center flex-wrap">
-            <div class=" w-[80%] flex justify-center items-center">
-                <h1 class="text-gray-800 dark:text-white text-[60px] text-center pt-25 w-[700px] font-semibold">
+            class="border-3 w-screen h-[830px] bg-linear-to-b from-[#417ed9] from-[5%] to-[#fb9635] dark:bg-linear-to-b dark:from-[#0a0f22] dark:from-[20%] dark:to-[#417ed9] flex flex-row max-lg:flex-col items-center max-lg:justify-around max-lg:gap-3 justify-center min-lg:flex-wrap">
+            <div class="border-3 w-[80%] flex justify-center items-center max-lg:mt-3">
+                <h1
+                    class="text-gray-800 dark:text-white text-[60px] max-lg:text-[30px] text-center pt-25 max-lg:pt-0 w-[700px] max-lg:w-[80%] font-semibold">
                     Soy <span class="text-[#e4f78b] text-shadow-black text-shadow-md">Ricardo
                         Hernández</span>
-                    desarrollador <span class=" border-1 border-gray-800 dark:border-white rounded-xl pr-2 pl-2">Full
+                    desarrollador
+                    <br class="hidden max-lg:block"> <span
+                        class=" border-1 border-gray-800 dark:border-white rounded-xl pr-2 pl-2">Full
                         Stack</span>
                 </h1>
             </div>
-            <div class=" p-4 mr-auto w-[350px] h-[180px] bg-[#47568a] dark:bg-[#1d2237] -rotate-6 flex items-center justify-center mb-25 rounded-xl
+            <div class=" min-lg:hidden w-[200px] h-[250px] flex items-end justify-center">
+                <div class=" relative z-0 w-[200px] h-[250px] flex items-end justify-center">
+                    <div
+                        class="border 3 w-[290px] h-[350px] bg-radial-[at_53%_80%] from-[#fffbf0] dark:from-[#747954] from-3% to-[#ffffff00] to-50% dark:to-70% absolute -z-10">
+                    </div>
+                    <img class="mb-3 absolute z-2 w-[250px] drop-shadow-[0_-15px_135px_rgba(219,249,197,1)]"
+                        src="./resources/descarga.png" alt="">
+                    <div class="absolute z-3 bottom-4 "><button
+                            class="bg-[#e8f78e] hover:bg-[#0a0f22] hover:text-white dark:hover:bg-sky-500 rounded-3xl border-2 pl-5 pr-5 pt-2 pb-2 border-blue-950 w-[120px] h-[35px] text-[12px]">MY
+                            PROJECTS</button>
+                    </div>
+                </div>
+            </div>
+            <div class=" p-4 mr-auto w-[350px] h-[180px] bg-[#47568a] dark:bg-[#1d2237] -rotate-6 max-lg:rotate-5 flex items-center justify-center mb-25 max-lg:mb-0 rounded-xl
                 shadow-[0_-3px_15px_rgba(255,255,255,0.2)] ml-3">
                 <div class="w-[90%] h-[90%] text-left ">
                     <h2 class="text-white text-shadow-md text-shadow-gray-800 text-[25px] leading-7">Client Review From
@@ -104,7 +126,7 @@
                     </p>
                 </div>
             </div>
-            <div class=" w-[480px] h-[550px] mt-auto flex items-end justify-center">
+            <div class="border-3 max-lg:hidden w-[480px] h-[540px] mt-auto flex items-end justify-center">
                 <div class=" relative z-0 w-[480px] h-[550px] flex items-end justify-center">
                     <div
                         class="w-[480px] h-[550px] bg-radial-[at_53%_80%] from-[#fffbf0] dark:from-[#747954] from-5% to-[#ffffff00] to-60% dark:to-70% absolute -z-10">
@@ -117,7 +139,7 @@
                     </div>
                 </div>
             </div>
-            <div class=" ml-auto p-6 w-[350px] h-[180px] bg-[#47568a] dark:bg-[#1d2237] rotate-6 flex flex-col items-center justify-around mb-25 rounded-xl
+            <div class=" ml-auto p-6 w-[350px] h-[180px] bg-[#47568a] dark:bg-[#1d2237] max-lg:-rotate-4 rotate-6 flex flex-col items-center justify-around mb-25 rounded-xl
             shadow-[0_-3px_15px_rgba(255,255,255,0.2)] mr-3">
                 <div class=" w-[100%] text-[22px]">
                     <h2 class="text-white text-shadow-md text-shadow-gray-800 font-semibold">MY EXPERTISE </h2>
